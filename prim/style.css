@@ -1,3 +1,13 @@
-.selector {
-  background-color: white;
+nav {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  list-style: none;
+}
+nav li a {
+  color: red;
+}
+nav li ahover {
+  text-decoration: none;
 }

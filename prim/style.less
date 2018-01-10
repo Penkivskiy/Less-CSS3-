@@ -1,12 +1,16 @@
-.mixin(@color) when (@color=red) {
-	background-color: black;
+.ul(@color) {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+		a {
+			color:@color;
+			&hover {
+				text-decoration: none;
+			}
+		}
+	}
 }
-.mixin(@color) when (@color=black) {
-	background-color: red;
-}
-.mixin(@color) when not (@color=black) and not (@color=black) {
-	background-color: white;
-}
-.selector {
-	.mixin(green);
+nav {
+	.ul(red);
 }
