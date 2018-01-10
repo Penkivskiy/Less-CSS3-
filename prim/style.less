@@ -1,20 +1,12 @@
-.mixin() {
-	height: 500px;
+.mixin(@color) when (@color=red) {
+	background-color: black;
 }
-.mixin(@color) {
-	color:@color;
+.mixin(@color) when (@color=black) {
+	background-color: red;
 }
-.mixin(@width) {
-	width:@width;
+.mixin(@color) when not (@color=black) and not (@color=black) {
+	background-color: white;
 }
-.mixin(@color, @width) {
-	color: @color;
-	width: @width;
-}
-
-.selector-1 {
-	.mixin(red);
-}
-.selector -2 {
-	.mixin(red;20px);
+.selector {
+	.mixin(green);
 }
