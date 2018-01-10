@@ -1,21 +1,20 @@
-.btn-1 {
-	.button(5px; 5px 10px; red; solid; 5px);
-	background-color: red;
+.mixin() {
+	height: 500px;
 }
-.btn-2 {
-	.button();
-	background-color: green;
+.mixin(@color) {
+	color:@color;
 }
-.button(@radius:5px; @padding:10px; @rest...) {
-	display: inline-block;
-	border-radius: @radius;
-	padding: @padding;
-	border: @rest;
+.mixin(@width) {
+	width:@width;
+}
+.mixin(@color, @width) {
+	color: @color;
+	width: @width;
 }
 
-.border(@color:red;@type:solid;@width: 5px){
-	border: @arguments;
+.selector-1 {
+	.mixin(red);
 }
-.btn-3 {
-	.border()
+.selector -2 {
+	.mixin(red;20px);
 }
