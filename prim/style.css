@@ -1,0 +1,17 @@
+.btn-1 {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: red solid 5px;
+  background-color: red;
+}
+.btn-2 {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  border: ;
+  background-color: green;
+}
+.btn-3 {
+  border: red solid 5px;
+}

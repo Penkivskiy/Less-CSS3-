@@ -1,0 +1,21 @@
+.btn-1 {
+	.button(5px; 5px 10px; red; solid; 5px);
+	background-color: red;
+}
+.btn-2 {
+	.button();
+	background-color: green;
+}
+.button(@radius:5px; @padding:10px; @rest...) {
+	display: inline-block;
+	border-radius: @radius;
+	padding: @padding;
+	border: @rest;
+}
+
+.border(@color:red;@type:solid;@width: 5px){
+	border: @arguments;
+}
+.btn-3 {
+	.border()
+}
