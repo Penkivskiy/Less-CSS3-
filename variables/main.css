@@ -1,0 +1,23 @@
+header {
+  background-color: red;
+  width: 100px;
+}
+footer {
+  background-color: red;
+  height: 50px;
+}
+body {
+  text-transform: lowercase;
+}
+section {
+  text-transform: uppercase;
+}
+body {
+  background-image: url('docs/image/pic-1.png');
+}
+.col-1 {
+  width: 100%;
+}
+.col-2 {
+  width: 50%;
+}

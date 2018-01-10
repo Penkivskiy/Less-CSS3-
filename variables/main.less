@@ -1,0 +1,38 @@
+@color : red;
+
+header {
+	background-color: @color;
+	width: @width;
+}
+footer {
+	background-color: @color;
+	height: @height;
+}
+@width: 100px;
+@height: @width/2;
+////////////////////////
+@text: uppercase;
+
+body {
+	text-transform: @text;
+	@text: lowercase;
+}
+section {
+	text-transform: @text;
+}
+
+
+////////////////////////
+@folder : 'docs/image';
+body {
+	background-image: url('@{folder}/pic-1.png');
+}
+
+@prefix : .col;
+
+@{prefix}-1 {
+	width: 100%;
+}
+@{prefix}-2 {
+	width: 50%;
+}
